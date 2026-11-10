@@ -417,6 +417,11 @@ button:hover {
 
 /* Responsive */
 
+/* Four nav links: tighten them before the nav collapses into the panel at 980px */
+@media screen and (max-width: 1180px) {
+	#nav ul.links li a { padding: 0 0.8rem; font-size: 0.8rem; }
+}
+
 @media screen and (max-width: 980px) {
 	#main > .posts > article,
 	#main > .posts > article:nth-child(n) { width: 100%; }
