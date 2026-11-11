@@ -1,4 +1,4 @@
-# Renders cv.html and cv-pl.html to PDF files in cv/ using headless Microsoft Edge.
+# Renders cv.html and pl/cv.html to PDF files in cv/ using headless Microsoft Edge.
 # Usage (from the repo root):  powershell -ExecutionPolicy Bypass -File tools\build-cv.ps1
 
 $root = Split-Path -Parent $PSScriptRoot
@@ -10,7 +10,7 @@ New-Item -ItemType Directory -Force $out | Out-Null
 
 $pages = @{
 	"cv.html"    = "Oskar-Bielak-CV-EN.pdf"
-	"cv-pl.html" = "Oskar-Bielak-CV-PL.pdf"
+	"pl/cv.html" ="Oskar-Bielak-CV-PL.pdf"
 }
 
 foreach ($page in $pages.Keys) {
