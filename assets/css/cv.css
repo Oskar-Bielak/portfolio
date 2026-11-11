@@ -150,7 +150,7 @@ ul { list-style: none; }
 
 /* Main column */
 
-.content { padding: 9mm 11mm 6mm 10mm; }
+.content { padding: 9mm 11mm 5mm 10mm; }
 
 .head { margin-bottom: 2mm; }
 
@@ -221,7 +221,7 @@ ul { list-style: none; }
 .projects li { margin-bottom: 0.8mm; }
 
 .gdpr {
-	margin-top: 3mm;
+	margin-top: 2mm;
 	font-size: 6.5pt;
 	color: #8a94a1;
 	line-height: 1.35;
