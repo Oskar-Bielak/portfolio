@@ -256,3 +256,27 @@
 		}
 
 })(jQuery);
+// Language preference: remembered so the root page can send returning visitors
+// to the language they chose (see the inline script in index.html).
+(function() {
+
+	var KEY = 'lang';
+
+	function save(lang) {
+		try { localStorage.setItem(KEY, lang); } catch (e) {}
+	}
+
+	// First visit: the page you landed on is the language you get.
+	try {
+		if (!localStorage.getItem(KEY))
+			save(document.documentElement.lang);
+	} catch (e) {}
+
+	// Explicit choice (delegated: the nav is cloned into the mobile panel).
+	document.addEventListener('click', function(event) {
+		var link = event.target.closest ? event.target.closest('a.lang-switch') : null;
+		if (link)
+			save(link.getAttribute('hreflang'));
+	});
+
+})();
