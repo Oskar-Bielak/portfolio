@@ -183,7 +183,7 @@ ul { list-style: none; }
 
 .content h2:before { content: "// "; color: var(--accent); }
 
-.entry { margin-bottom: 2.2mm; break-inside: avoid; }
+.entry { margin-bottom: 2mm; break-inside: avoid; }
 
 .entry-head {
 	display: flex;
